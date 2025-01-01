@@ -8,6 +8,7 @@
 @font-face {
     font-family: "DMMono-Medium";
     src: url("/fonts/DMMono-Medium.ttf");
+    font-weight: 1200;
 }
 @font-face {
     font-family: "Open Sans";
@@ -17,7 +18,8 @@
 
 :root {
     --background-color-0: #000000;
-    --background-color-1: #404040;
+    --background-color-1: #1f1f1f;
+    --whiter-gray: #383838;
     --accent-color: #ededed;
     --h1-font: "DMMono-Medium";
     --h2-font: "DMMono-Regular";
