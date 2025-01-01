@@ -1,0 +1,22 @@
+
+.textbox-container * {
+    display: block;
+}
+.textbox-input {
+    all: unset;
+    font-family: var(--h2-font);
+    background-color: var(--background-color-1);
+    color: var(--accent-color);
+    border-radius: 10px;
+    height: 35px;
+    border: 1px solid var(--whiter-gray);
+    padding-left: 10px;
+    width: auto; 
+    font-size: 0.8rem;  
+}
+.textbox-title {
+    font-family: var(--h1-font);
+    color: var(--accent-color);
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
