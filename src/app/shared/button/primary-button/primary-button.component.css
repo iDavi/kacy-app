@@ -17,5 +17,5 @@ button {
 }
 
 .primary-button:hover {
-    color: var(--background-color-1);
+    color: var(--whiter-gray);
 }

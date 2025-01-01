@@ -13,5 +13,4 @@ import { SecondaryButtonComponent } from './secondary-button/secondary-button.co
 export class ButtonComponent {
   @Input() type : string = "primary";
   @Input() label : string = "Button";
-
 }
