@@ -9,13 +9,19 @@
     font-family: "DMMono-Medium";
     src: url("/fonts/DMMono-Medium.ttf");
 }
+@font-face {
+    font-family: "Open Sans";
+    src: url("/fonts/OpenSans.ttf");
+    font-weight: 600;
+}
 
 :root {
     --background-color-0: #000000;
-    --background-color-1: #0a0a0a;
+    --background-color-1: #404040;
     --accent-color: #ededed;
     --h1-font: "DMMono-Medium";
     --h2-font: "DMMono-Regular";
+    --default-font: "Open Sans"
 }
 
 body {

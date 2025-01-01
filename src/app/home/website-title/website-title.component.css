@@ -1,6 +1,4 @@
-.website-title-container {
-    width: 270px;
-}
+
 .website-title {
     color: var(--accent-color);
     font-family: var(--h1-font);
@@ -9,7 +7,8 @@
 
 .website-subtitle {
    color: var(--accent-color) ;
-   font-family: var(--h2-font)
+   font-family: var(--h2-font);
 }
+
 
 
