@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "DMMono-Regular";
+    src: url("/fonts/DMMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "DMMono-Medium";
+    src: url("/fonts/DMMono-Medium.ttf");
+}
+
+:root {
+    --background-color-0: #000000;
+    --background-color-1: #0a0a0a;
+    --accent-color: #ededed;
+    --h1-font: "DMMono-Medium";
+    --h2-font: "DMMono-Regular";
+}
+
+body {
+    background-color: var(--background-color-0);
+}

@@ -1,0 +1,15 @@
+.website-title-container {
+    width: 270px;
+}
+.website-title {
+    color: var(--accent-color);
+    font-family: var(--h1-font);
+    font-size: 3rem;
+}
+
+.website-subtitle {
+   color: var(--accent-color) ;
+   font-family: var(--h2-font)
+}
+
+
