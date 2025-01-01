@@ -1,0 +1,21 @@
+button {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none;
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    font-family: var(--default-font);
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    color: var(--background-color-0);
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    color: var(--background-color-1);
+}
