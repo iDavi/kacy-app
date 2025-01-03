@@ -1,0 +1,28 @@
+.message-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.message-box-input {
+    all: unset;
+    font-family: var(--h2-font);
+    background-color: var(--background-color-1);
+    color: var(--accent-color);
+    border-radius: 10px;
+    height: 35px;
+    border: 1px solid var(--whiter-gray);
+    padding-left: 10px;
+    width: 60vw;
+    font-size: 0.8rem;  
+}
+
+.message-box-button {
+    height: 35px;
+    background-color: var(--background-color-1);
+    color: var(--accent-color);
+    border-radius: 10px;
+    height: 35px;
+    border: 1px solid var(--whiter-gray);
+    padding-left: 10px;
+    width: auto;
+}
