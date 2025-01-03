@@ -1,0 +1,23 @@
+<div *ngIf="isFromMyself" class="message-row-self">
+    <div class="message-bubble-self">
+        <span class="message-content">
+            {{content}}
+        </span>
+        <span class="message-info-self">
+            {{getMessageTime()}}
+        </span>
+    </div>
+    
+</div>
+
+<div *ngIf="!isFromMyself" class="message-row-other">
+    <div class="message-bubble-other">
+        <span class="message-content">
+            {{content}}
+        </span>
+        <span class="message-info-other">
+            {{getMessageTime()}}
+        </span>
+    </div>
+    
+</div>
