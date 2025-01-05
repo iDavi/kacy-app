@@ -26,6 +26,13 @@
     --default-font: "Open Sans"
 }
 
-body {
+.white-theme {
+    --background-color-0: #e0f0ff;
+    --background-color-1: #cce6ff;
+    --whiter-gray: #52aeff;
+    --accent-color: #00254d;
+}
+
+.app-container {
     background-color: var(--background-color-0);
 }

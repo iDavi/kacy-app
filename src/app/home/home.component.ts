@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { WebsiteTitleComponent } from "./website-title/website-title.component";
-import { ButtonComponent } from "../shared/button/button.component";
+import { ButtonComponent } from "../shared/components/button/button.component";
 import { ModalComponent } from "./modal/modal.component";
 
 @Component({
@@ -14,6 +14,8 @@ export class HomeComponent {
   modalVisible : boolean = false
   isJoining : boolean = false;
 
+
+  
   onModalClose($event : boolean){
     this.modalVisible = false;
   }

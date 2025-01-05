@@ -1,3 +1,22 @@
+@keyframes errorInput {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
 .message-box-container {
     display: flex;
     justify-content: center;
@@ -25,4 +44,14 @@
     border: 1px solid var(--whiter-gray);
     padding-left: 10px;
     width: auto;
+}
+
+.message-box-button:hover {
+    background-color: var(--whiter-gray);
+    cursor: pointer;
+}
+
+.error {
+    border-color: red;
+    animation: errorInput 0.5s ease-in-out;
 }

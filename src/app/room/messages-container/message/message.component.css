@@ -1,6 +1,3 @@
-::-webkit-scrollbar {
-    display: none;
-}
 .message-row-self {
     display: flex;
     justify-content: end;

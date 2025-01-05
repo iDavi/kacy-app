@@ -1,2 +1,9 @@
-
-<router-outlet></router-outlet>
+<div class="app-container" [class.white-theme]="whiteTheme">
+    <router-outlet></router-outlet>
+    <div class="themes">
+        <span>themes: </span>
+        <span class="theme" (click)="setDarkTheme()">black-parade.css</span>
+        <span class="theme" (click)="setWhiteTheme()">im-blue.css</span>
+    </div>
+    
+</div>
