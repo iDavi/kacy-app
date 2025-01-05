@@ -1,0 +1,23 @@
+.app-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.themes {
+    font-family: var(--h1-font);
+    position: fixed;
+    display: flex;
+    gap: 5px;
+    bottom: 5px;
+    color: var(--accent-color);
+    margin-left: 10px;
+    font-size: 0.7rem;
+
+}
+.theme {
+    border-bottom: 1px solid var(--accent-color);
+    cursor: pointer;
+}

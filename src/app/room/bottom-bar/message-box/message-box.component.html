@@ -1,0 +1,4 @@
+<div class="message-box-container" (keyup)="enterHandler($event)">
+    <input #input placeholder="Send a message..." class="message-box-input" [formControl]="content" (input)="removeErrorStyle()" (click)="removeErrorStyle()"/>
+    <button class="message-box-button material-symbols-outlined" (click)="sendMessage()">send</button>
+</div>

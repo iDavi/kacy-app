@@ -1,0 +1,7 @@
+<div #messageContainer class="messages-container">
+    <app-message *ngFor="let message of messages" [content]="message.content" [isFromMyself]="isFromMyself(message.signature)" [authorName]="message.authorName">
+
+
+    </app-message>
+
+</div>

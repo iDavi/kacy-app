@@ -3,15 +3,15 @@
     <div class="modal-popup">
         <h2 class="modal-title">{{title}}</h2>
         <div class="modal-content">
-            <app-textbox title="Your username" placeholder="A cool name, like you ;)" inputStyle="width: 94%"></app-textbox>
+            <app-textbox #usernameTextbox title="Your username" placeholder="A cool name, like you ;)" inputStyle="width: 94%" defaultText="{{generatedUsername}}"></app-textbox>
             <br>
-            <app-textbox title="Room ID" placeholder="The id of the room you want to enter" inputStyle="width: 94%" *ngIf="askRoomId==true"></app-textbox>
+            <app-textbox #roomIdTextbox title="Room ID" placeholder="The id of the room you want to enter" inputStyle="width: 94%" *ngIf="askRoomId==true"></app-textbox>
             <div class="buttons-row">
                 
                <div class="clickListener" (click)="closeModal()">
                     <app-button label="Cancel" type="secondary"></app-button>
                </div> 
-                <app-button label="Create"></app-button>
+                <app-button label="Create" (click)="submit()"></app-button>
             </div>
            
         </div>

@@ -1,0 +1,57 @@
+@keyframes errorInput {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.message-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.message-box-input {
+    all: unset;
+    font-family: var(--h2-font);
+    background-color: var(--background-color-1);
+    color: var(--accent-color);
+    border-radius: 10px;
+    height: 35px;
+    border: 1px solid var(--whiter-gray);
+    padding-left: 10px;
+    width: 60vw;
+    font-size: 0.8rem;  
+}
+
+.message-box-button {
+    height: 35px;
+    background-color: var(--background-color-1);
+    color: var(--accent-color);
+    border-radius: 10px;
+    height: 35px;
+    border: 1px solid var(--whiter-gray);
+    padding-left: 10px;
+    width: auto;
+}
+
+.message-box-button:hover {
+    background-color: var(--whiter-gray);
+    cursor: pointer;
+}
+
+.error {
+    border-color: red;
+    animation: errorInput 0.5s ease-in-out;
+}
