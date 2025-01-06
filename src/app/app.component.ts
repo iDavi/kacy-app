@@ -28,6 +28,9 @@ export class AppComponent {
   constructor(){
     afterNextRender(() => {
       this.signature = localStorage.getItem("signature") || this.generateSignature() 
+      if(!localStorage.getItem("username") ){
+        localStorage.setItem("username", WordId.generate(1, " "))
+      }
     });
   }
 
