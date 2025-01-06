@@ -1,3 +1,3 @@
 export const environment = {
-    websocketUrl: 'ws://localhost:4000/socket/websocket' 
+    websocketUrl: 'ws://localhost:3000/socket/websocket' 
 };
