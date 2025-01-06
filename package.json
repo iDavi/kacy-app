@@ -23,6 +23,7 @@
     "@angular/ssr": "^18.2.9",
     "@types/phoenix": "^1.6.6",
     "express": "^4.18.2",
+    "ngx-clipboard": "^16.0.0",
     "phoenix": "^1.7.18",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
