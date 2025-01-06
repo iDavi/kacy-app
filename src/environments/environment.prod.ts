@@ -1,3 +1,3 @@
 export const environment = {
-    websocketUrl: 'ws://kacychat.site/socket' 
+    websocketUrl: 'wss://kacychat.site/socket' 
 };
