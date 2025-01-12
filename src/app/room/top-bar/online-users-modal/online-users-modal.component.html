@@ -1,7 +1,7 @@
 <div *ngIf="visible">
     <div class="modal-dark-background" (click)="closeModal()"></div>
     <div class="modal-popup">
-        <h2 class="modal-title">Online users</h2>
+        <h2 class="modal-title">Online users ({{usersList.length}})</h2>
         <div class="modal-content">
             <span *ngFor="let user of usersList" style="color: rgb(255, 77, 77);" class="user-info">{{user.username}}</span>
         </div>

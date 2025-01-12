@@ -6,10 +6,12 @@
     width: 100%;
     top:0;
     left: 0;
-    height: auto;
+    height: 10vh;
+    max-height: 90px;
     border-bottom: 1px solid var(--whiter-gray);
     gap: 10px;
     z-index: 10000; /*necessary to make online users modal works*/
+    font-size: 0.7rem;
 }
 
 .room-info {
@@ -20,17 +22,21 @@
     color: var(--accent-color);
     background-color: var(--background-color-1);
     width: auto;
+    max-width: 25vw;
+    
+    
     padding-left: 15px;
     padding-right: 15px;
-    height: 30px;
+    height: auto;
     border: 1px solid var(--whiter-gray);
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: var(--default-font);
-    font-size: 0.8rem;
+
     cursor: pointer;
     user-select: none;
+    overflow-wrap: anywhere;
 }
 
 

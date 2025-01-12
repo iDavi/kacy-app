@@ -43,8 +43,19 @@ export class RoomService {
     setInterval(() => {
       this.channel.push("list_users", {}).receive("ok", (response) => {
         this.onlineUserCounter = response.data.length
+        this.onlineUsers = response.data
+
+        let hasSelf = false;
+
+        //join again if user isn't on online users list (this behavior is due to opening two browser windows and closing one)
+        this.onlineUsers.forEach((item) => {
+          if(item.signature == localStorage.getItem("signature")) hasSelf = true;
+        });
+        if(!hasSelf){
+          window.location.reload()
+        }
       })
-    },1000);
+    },5000);
     this.channel.on('messageSent', (message: any) => {
       this.messageSubject.next(message);
     });
@@ -59,5 +70,6 @@ export class RoomService {
     this.channel.push('message', payload)
   }
 
+  
 
 }

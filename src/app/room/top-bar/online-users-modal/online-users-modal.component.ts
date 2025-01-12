@@ -13,13 +13,12 @@ export class OnlineUsersModalComponent implements OnInit {
   @Input() visible : boolean = false;
   usersList : any[] = [];
   @Output() closeModalEvent = new EventEmitter<boolean>();
-  JSON : any = JSON
   constructor(private roomService : RoomService){}
 
   ngOnInit(): void {
     setInterval(() => {
       this.usersList = this.roomService.onlineUsers
-    },1000);
+    },5000);
   }
   closeModal(){
     this.closeModalEvent.emit(false)
