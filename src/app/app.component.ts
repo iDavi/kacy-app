@@ -1,12 +1,13 @@
-import { Component, OnInit, Injectable, afterNextRender } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { WordId } from './shared/modules/word-id';
+import { NgIf } from '@angular/common';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, NgIf],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -17,21 +18,28 @@ import { WordId } from './shared/modules/word-id';
 export class AppComponent {
   title = 'kacy-app';
   signature = "" 
-  whiteTheme = false;
+  themeSelectorVisible = false;
+  theme = localStorage.getItem("theme") || "";
+  themeSelectorLinkText = "themes"
 
-  setDarkTheme(){
-    this.whiteTheme = false
+  selectTheme(theme : string){
+    localStorage.setItem("theme", theme)
+    this.theme = theme
   }
-  setWhiteTheme(){
-    this.whiteTheme = true
+  themeSelectorLinkClick(){
+    if(this.themeSelectorVisible){
+      this.themeSelectorVisible = false
+      this.themeSelectorLinkText = "themes"
+      return;
+    }
+    this.themeSelectorVisible = true
+    this.themeSelectorLinkText = "return to Kacy"
   }
   constructor(){
-    afterNextRender(() => {
       this.signature = localStorage.getItem("signature") || this.generateSignature() 
       if(!localStorage.getItem("username") ){
         localStorage.setItem("username", WordId.generate(1, " "))
       }
-    });
   }
 
   private generateSignature() : string {

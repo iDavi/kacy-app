@@ -5,19 +5,43 @@
     width: 100vw;
     height: 100vh;
 }
-
+.theme-selector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color-0);
+    z-index: 999999;
+}
+.theme-selector-link {
+    position: absolute;
+    font-family: var(--h1-font);
+    color: var(--accent-color);
+    font-size: 0.7rem;
+    bottom: 5px;
+    border-bottom: 1.7px solid var(--accent-color);
+    z-index: 999999999;
+    cursor: pointer;
+    margin-left: 8px;
+    user-select: none;
+}
 .themes {
     font-family: var(--h1-font);
-    position: fixed;
     display: flex;
-    gap: 5px;
-    bottom: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: var(--accent-color);
-    margin-left: 10px;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
 
 }
 .theme {
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 1.7px solid var(--accent-color);
+    width: fit-content;
     cursor: pointer;
+}
+
+.mcdonalddds {
+    
 }

@@ -16,6 +16,10 @@
     font-weight: 600;
 }
 
+::placeholder {
+    color: var(--whiter-gray);
+}
+
 :root {
     --background-color-0: #0f0f0f;
     --background-color-1: #1f1f1f;
@@ -26,11 +30,53 @@
     --default-font: "Open Sans"
 }
 
-.white-theme {
+.im-blue {
     --background-color-0: #e0f0ff;
     --background-color-1: #cce6ff;
     --whiter-gray: #52aeff;
     --accent-color: #00254d;
+}
+
+.doritos-and-fritos {
+    --background-color-0: #290849;
+    --background-color-1: #55185D;
+    --whiter-gray: #ECB602;
+    --accent-color: #ff0080;
+}
+
+.ethereality {
+    --background-color-0: #961fbe;
+    --background-color-1: #bd38e9;
+    --whiter-gray: #f494ff;
+    --accent-color: #fbdeff;
+}
+
+.life-in-plastic-its-fantatic {
+    --background-color-0: #ff00ee;
+    --background-color-1: #ff86f1;
+    --whiter-gray: #9b0043;;
+    --accent-color: #18000d;
+}
+
+.mcdonalddds {
+    --background-color-0: #ff0000;
+    --background-color-1: #ff6060;
+    --whiter-gray: #ff9100;;
+    --accent-color: #f6ff00;
+}
+
+.discord {
+    --background-color-0: #1e2124;
+    --background-color-1: #36393e;
+    --whiter-gray: #5c6064;
+    --accent-color: #7289da;
+}
+
+.whatsapp-zapzap {
+    --background-color-0: #ece5dd;
+    --background-color-1: #dcf8c6;
+    --whiter-gray: #128c7e;
+    --accent-color: #03221f;
 }
 
 .app-container {

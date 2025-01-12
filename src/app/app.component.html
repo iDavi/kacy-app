@@ -1,9 +1,18 @@
-<div class="app-container" [class.white-theme]="whiteTheme">
+<div class="app-container" [class]="theme">
     <router-outlet></router-outlet>
-    <div class="themes">
-        <span>themes: </span>
-        <span class="theme" (click)="setDarkTheme()">black-parade.css</span>
-        <span class="theme" (click)="setWhiteTheme()">im-blue.css</span>
+    <span class="theme-selector-link" (click)="themeSelectorLinkClick()">{{themeSelectorLinkText}}</span>
+    <div class="theme-selector" *ngIf="themeSelectorVisible">
+        <div class="themes">
+            <span>themes: </span>
+            <span class="theme" (click)="selectTheme('')">black-parade.css</span>
+            <span class="theme" (click)="selectTheme('im-blue')">im-blue.css</span>
+            <span class="theme" (click)="selectTheme('doritos-and-fritos')">doritos-and-fritos.css</span>
+            <span class="theme" (click)="selectTheme('ethereality')">ethereality.css</span>
+            <span class="theme" (click)="selectTheme('life-in-plastic-its-fantatic')">life-in-plastic-its-fantistic.css</span>
+            <span class="theme" (click)="selectTheme('mcdonalddds')">mcdonalddds.css</span>
+            <span class="theme" (click)="selectTheme('discord')">discord.css</span>
+            <span class="theme" (click)="selectTheme('whatsapp-zapzap')">whatsapp-zapzap.css</span>
+        </div>
     </div>
-    
+
 </div>
