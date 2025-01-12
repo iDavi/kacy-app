@@ -1,9 +1,24 @@
 <div class="top-bar-container">
-    <app-button type="secondary" label="Copy ID" (click)="copyId()"></app-button>
-    <div class="room-info">
+
+
+    <div class="room-info" (click)="copyId()">
+        <span class="material-symbols-outlined">tag</span>
         <span>
-            Room ID: {{roomId}}
+            {{roomId}}
         </span>
     </div>
-    
+    <div class="room-info" (click)="copyUsername()">
+        <span class="material-symbols-outlined">account_circle</span>
+        <span>
+            {{username}}
+        </span>
+    </div>
+
+    <div class="room-info" (click)="onlineUsersModalVisible=true">
+        <span class="material-symbols-outlined" style="margin-right: 5px;">radio_button_checked</span>
+        <span>
+            {{onlineUserCounter}} online
+        </span>
+    </div>
+    <app-online-users-modal [visible]="onlineUsersModalVisible" (closeModalEvent)="onModalClose($event)"></app-online-users-modal>
 </div>

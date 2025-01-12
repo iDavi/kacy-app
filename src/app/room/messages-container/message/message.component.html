@@ -1,10 +1,10 @@
 <div *ngIf="isFromMyself" class="message-row-self">
     <div class="message-bubble-self">
+        <span *ngIf="canShowMessageInfo" class="message-info-self">
+            {{getTime()}}  <span style="color: rgb(255, 70, 70)">{{authorName}} (you)</span>
+        </span>
         <span class="message-content">
             {{content}}
-        </span>
-        <span class="message-info-self">
-            {{getTime()}}
         </span>
     </div>
     
@@ -12,11 +12,12 @@
 
 <div *ngIf="!isFromMyself" class="message-row-other">
     <div class="message-bubble-other">
+        <span *ngIf="canShowMessageInfo" class="message-info-other">
+            <span style="color: red">{{authorName}}</span> {{getTime()}}
+        </span>
         <span class="message-content">
             {{content}}
         </span>
-        <span class="message-info-other">
-            {{getTime()}} <span style="color: red">{{authorName}}</span>
-        </span>
+
     </div>
 </div>
