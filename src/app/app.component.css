@@ -15,15 +15,15 @@
     z-index: 999999;
 }
 .theme-selector-link {
-    position: absolute;
+    position: fixed;
+    bottom: 3vh;
+    left: 1.5vw;
     font-family: var(--h1-font);
     color: var(--accent-color);
     font-size: 0.7rem;
-    bottom: 5px;
     border-bottom: 1.7px solid var(--accent-color);
-    z-index: 999999999;
+    z-index: 99999990099;
     cursor: pointer;
-    margin-left: 8px;
     user-select: none;
 }
 .themes {
@@ -40,8 +40,4 @@
     border-bottom: 1.7px solid var(--accent-color);
     width: fit-content;
     cursor: pointer;
-}
-
-.mcdonalddds {
-    
 }
